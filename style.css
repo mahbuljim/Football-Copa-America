@@ -52,6 +52,7 @@ body{
     border-radius: 3px;
     cursor: pointer;
 }
+
 .container-1 a button i{
     margin-left: 8px;
 }
@@ -108,7 +109,7 @@ body{
 }
 
 .player-name{
-    font-size: 35px;
+    font-size: 32px;
     width: 100%
 }
 .player-shortInfo{
@@ -116,4 +117,96 @@ body{
     font-size: 18px;
     line-height: 28px;
     color: var(--paragraphColor);
+}
+
+
+
+   /*---------------------------- 
+            3rd-section
+    ------------------------------- */
+
+ .footer{
+     text-align: center;
+ }
+
+footer .football-logo img{
+    width: 483.87px;
+    height: 110px;
+    margin: 70px 0px;
+}
+
+footer .socialmedia-icon a i{
+    color: #969BAB;
+    border: 7px solid #E7E7E8;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    font-size: 22px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.copyright{
+    margin-top: 27px;
+    margin-bottom: 78px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.copyright i{
+    font-size: 16px;
+}
+
+ 
+                   /* ----------------
+                        Media Quary
+                    ------------------*/
+
+       /* for pixel2 device */
+ 
+@media only screen and (max-width:688px) {
+  
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    
+    .container-1,.container-2{
+        width: 100%;
+        margin-left: -174px;
+    }
+    .container-1 h1{
+        font-size: 57px;
+    }
+    .container-1 a button{
+        width: 211px;
+        height: 74px;
+    }  
+   .container-2 img{
+    width: 437px;
+    height: 348px;
+    margin-left: -26px;
+    margin-top: 91px;
+}
+
+/* middle */
+
+
+.middle{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    width: 313px;
+    height: 475px;
+    margin-left: -298px;
+}
+
+footer .football-logo img{
+    width: 309px;
+    height: 123px;
+}
+
 }
